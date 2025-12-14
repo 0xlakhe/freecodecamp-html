@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+</head>
+<body>
+    <h1>FreeCodeCamp</h1>
+    <section>
+            <form action="freecodecamp.com">
+
+                <fieldset>
+                    <legend>Thank you for taking the time to help us improve the platform</legend>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="age" placeholder="Age" required>                                 
+                </fieldset>
+
+            </form>
+    </section>
+    <br>
+    <section>
+        <form action="freecodecamp.com">
+
+            <label for="role">Which option best describes your current role</label>
+            <br>
+            <br>
+            <select name="role" id="role">
+                <option value="student">Student</option>
+                <option value="full-Time-Job">Full Time Job</option>
+                <option value="full-Time-Learner">Full Time Learner</option>
+                <option value="prefer-not-to-say">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+
+           
+            <br>
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <input type="radio" id="definitely" name="recommend">
+            <label for="definitely">Definitely</label>
+            
+            <input type="radio" id="maybe" name="recommend">
+            <label for="maybe">Maybe</label>
+
+            <input type="radio" id="not-sure" name="recommend">
+            <label for="not-sure">Not sure</label>
+
+            <br>
+            <br>
+            <label for="feature">What is your favorite feature of freeCodeCamp?</label>    
+            <br>
+            <br> 
+            <select name="feature" id="feature">
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">community</option>
+                <option value="open-source">Open Source</option>
+            </select>
+
+            <br>
+            <br>
+            <fieldset>
+                <legend>What would you like to see improved?(Check all that apply)</legend>
+
+                <input type="checkbox" id="front-end-projects" name="improvement" value="front-end-projects">
+                <label for="front-end-projects">Front-end Projects</label>
+
+                <input type="checkbox" id="back-end-projects" name="improvement" value="back-end-projects">
+                <label for="back-end-projects">Back-end Projects</label>
+
+                <input type="checkbox" id="data-visualization" name="improvement" value="data-visualization">
+                <label for="data-visualization">Data Visualization</label>
+
+                <input type="checkbox" id="challenges" name="improvement" value="challenges">
+                <label for="challenges">Challenges</label>
+
+                <input type="checkbox" id="open-source-community" name="improvement" value="open-source-community">
+                <label for="open-source-community">Open Source Community</label>
+
+                <input type="checkbox" id="gitter-help-rooms" name="improvement" value="gitter-help-rooms">
+                <label for="gitter-help-rooms">Gitter help rooms</label>
+                
+                <input type="checkbox" id="videos" name="improvement" value="videos">
+                <label for="videos">Videos</label>
+
+                <input type="checkbox" id="city-meetups" name="improvement" value="city-meetups">
+                <label for="city-meetups">City Meetups</label>
+
+                <input type="checkbox" id="wiki" name="improvement" value="wiki">
+                <label for="wiki">Wiki</label>
+
+                <input type="checkbox" id="forum" name="improvement" value="forum">
+                <label for="forum">Forum</label>
+                
+                <input type="checkbox" id="additional-courses" name="improvement" value="additional-courses">
+                <label for="additional-courses">Additional Courses</label>
+
+            </fieldset>
+
+            <section>
+                <br>
+                <label for="comments">Any comments or suggestions?</label>
+                <br><br>
+                <textarea name="comments" id="comments"></textarea>
+             
+            </section>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </section>
+
+
+</body>
+</html>
