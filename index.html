@@ -6,32 +6,32 @@
     <title>Survey form</title>
 </head>
 <body>
-    <h1>FreeCodeCamp</h1>
+    <h1 id="title">FreeCodeCamp</h1>
     <section>
-            <form action="freecodecamp.com">
+            <form action="freecodecamp.com" id="survey-form">
 
                 <fieldset>
-                    <legend>Thank you for taking the time to help us improve the platform</legend>
-                    <label for="name">Name</label>
+                    <p id="description">Thank you for taking the time to help us improve the platform</p>
+                    <label for="name" id="name-label">Name</label>
                     <input type="text" name="name" id="name" placeholder="Enter your name" required>
                 
-                    <label for="email">Email</label>
+                    <label for="email" id="email-label">Email</label>
                     <input type="email" name="email" id="email" placeholder="Enter your Email" required>
 
-                    <label for="age">Age</label>
-                    <input type="number" name="age" id="age" placeholder="Age" required>                                 
+                    <label for="number" id="number-label">Age</label>
+                    <input type="number" name="age" id="number" placeholder="Age" min="5" max="70"required>                                 
                 </fieldset>
 
             </form>
     </section>
     <br>
     <section>
-        <form action="freecodecamp.com">
+        <form action="freecodecamp.com" id="survey-form">
 
             <label for="role">Which option best describes your current role</label>
             <br>
             <br>
-            <select name="role" id="role">
+            <select name="role" id="dropdown">
                 <option value="student">Student</option>
                 <option value="full-Time-Job">Full Time Job</option>
                 <option value="full-Time-Learner">Full Time Learner</option>
@@ -42,13 +42,13 @@
            
             <br>
             <p>Would you recommend freeCodeCamp to a friend?</p>
-            <input type="radio" id="definitely" name="recommend">
+            <input type="radio" id="definitely" name="recommend" value="definitely">
             <label for="definitely">Definitely</label>
             
-            <input type="radio" id="maybe" name="recommend">
+            <input type="radio" id="maybe" name="recommend" value="maybe">
             <label for="maybe">Maybe</label>
 
-            <input type="radio" id="not-sure" name="recommend">
+            <input type="radio" id="not-sure" name="recommend" value="not-sure">
             <label for="not-sure">Not sure</label>
 
             <br>
@@ -111,7 +111,7 @@
              
             </section>
 
-            <button type="submit">Submit</button>
+            <button type="submit" id="submit">Submit</button>
             <a href="https://www.freecodecamp.org/">Click Me Too!</a>
 
         </form>
